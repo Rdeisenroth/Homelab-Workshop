@@ -1,4 +1,4 @@
-# Workshop-Folien
+# Homelab-Workshop-Folien
 
 Das Template-Repo für die Workshop-Folien der Ophase.
 ## Voraussetzungen

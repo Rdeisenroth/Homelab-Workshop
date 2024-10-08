@@ -49,7 +49,7 @@ jobs:
       # 4. Get Date
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H-%M-%S.%N')"
+        run: echo "date=$(date +'%Y-%m-%d-%H-%M-%S.%N')" >> $GITHUB_ENV
 
       # 5. create a release
       - name: Create a release
@@ -58,8 +58,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: snapshot-${{ steps.date.outputs.date }}
-          name: snapshot-release-${{ steps.date.outputs.date }}
+          tag_name: snapshot-${{ env.date }}
+          name: snapshot-release-${{ env.date }}
           files: "*.pdf"
           fail_on_unmatched_files: true
           draft: false
