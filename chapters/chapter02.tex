@@ -29,25 +29,120 @@
 \graphicspath{{../pictures}}
 
 \begin{document}
-    \section{Basics}\label{2}\label{Basics}
-    \subsection{Linux}
-    \begin{frame}[<+(1)->]
+    \section{Exkurs: Linux und Open Source}\label{2}\label{sec:linux}
+    \subsection{Was ist Linux?}
+    \begin{frame}[c]
         \slidehead{}
-        TODO
-    \end{frame}
-    \subsection{Git}
-    \begin{frame}[<+(1)->]
-        \slidehead{}
-        TODO
+        \begin{columns}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{itemize}
+                    \item Ein offenes Betriebssystem/Kernel
+                    \item Entwickelt von Linus Torvalds
+                    \item Basierend auf Unix
+                    \item Viele verschiedene Distributionen
+                    \item Läuft auf > 90\% aller Server
+                \end{itemize}
+            \end{column}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faLinux{}\\[0.2cm]
+                    \normalsize\textbf{Linux}
+                \end{center}
+            \end{column}
+        \end{columns}
     \end{frame}
     \subsection{Open Source}
-    \begin{frame}[<+(1)->]
+    \begin{frame}[c]
         \slidehead{}
-        TODO
+        \begin{columns}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{itemize}
+                    \item Der Komplette Kernel: \url{https://github.com/torvalds/linux}
+                    \item Einzelne Distributionen:
+                        \begin{itemize}
+                            \item Arch: \url{https://github.com/archlinux}
+                            \item Ubuntu: \url{https://github.com/ubuntu}
+                        \end{itemize}
+                    \item Lizenz: \href{https://www.gnu.org/licenses/gpl-3.0.html}{GPLv3}
+                        \begin{itemize}
+                            \item Alle Projekte, die den Linux-Kernel verwenden, müssen ebenfalls GPLv3 lizensiert werden.
+                        \end{itemize}
+                \end{itemize}
+            \end{column}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faOsi{}\\[0.2cm]
+                    \normalsize\textbf{Open Source}
+                \end{center}
+            \end{column}
+        \end{columns}
     \end{frame}
-    \subsection{Was ist ein NAS?}
-    \begin{frame}[<+(1)->]
+    \subsection{Privatsphäre}
+    \begin{frame}[c]
         \slidehead{}
-        TODO
+        \begin{columns}
+            \begin{column}[c]{0.75\textwidth}
+                \centering\includegraphics[width=0.8\textwidth]{linux_privacy.jpg}
+            \end{column}
+            \begin{column}[c]{0.25\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faUserSecret{}\\[0.2cm]
+                    \normalsize\textbf{Privacy}
+                \end{center}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    \begin{frame}[c]
+        \slidehead{}
+        \begin{columns}
+            \begin{column}[c]{0.75\textwidth}
+                \begin{itemize}
+                    \item Transparenz durch offenen Quellcode
+                    \item Keine \enquote{Druck}, Geld mit Daten zu machen
+                    \item Viele Linux-Distros legen großen Wert auf die Privatsphäre
+                \end{itemize}
+            \end{column}
+            \begin{column}[c]{0.25\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faUserSecret{}\\[0.2cm]
+                    \normalsize\textbf{Privacy}
+                \end{center}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    \subsection{Sicherheit}
+    \begin{frame}[c]
+        \slidehead{}
+        \begin{columns}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{itemize}
+                    \item 97\% aller Server verwenden Linux
+                    \item Wird von Großen Unternehmen mitentwickelt
+                    \item Sehr fähige (Kern-) Userbase
+                \end{itemize}
+            \end{column}
+            \begin{column}[c]{0.5\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faShield*{}\\[0.2cm]
+                    \normalsize\textbf{Security}
+                \end{center}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    \subsection{Freedom of Choice}
+    \begin{frame}[c]%
+        \slidehead{}%
+        \begin{columns}%
+            \begin{column}[c]{0.5\textwidth}%
+                \centering\includegraphics[height=5.5cm]{freedom_of_choice_meme.png}%
+                % \centering\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{freedom_of_choice_meme.png}%
+            \end{column}%
+            \begin{column}[c]{0.5\textwidth}
+                \begin{center}
+                    \fontsize{50pt}{0pt}\selectfont\faMagic{}\\[0.2cm]
+                    \normalsize\textbf{Freedom of Choice}
+                \end{center}
+            \end{column}
+        \end{columns}
     \end{frame}
 \end{document}
