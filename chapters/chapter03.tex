@@ -1,0 +1,37 @@
+% !TeX root = chapter02.tex
+\documentclass[
+    ngerman,
+    accentcolor=3b,
+    % dark_mode, % uncomment for dark mode
+    fontsize= 12pt,
+    a4paper,
+    aspectratio=169,
+    colorback=true,
+    fancy_row_colors,
+    leqno,
+    fleqn,
+    boxarc=3pt,
+    fleqn,
+    main,
+    design=2008,
+    % shell_escape = false, % Kompatibilität mit sharelatex
+]{algoslides}
+\RequirePackage{import}
+\subimport{../common}{preamble}
+
+%%--------------------------%%
+%%--Imports from Main File--%%
+%%--------------------------%%
+
+% Get Labels from Main Document using the xr-hyper Package
+\externaldocument[ext:]{../main}
+% Set Graphics Path, so pictures load correctly
+\graphicspath{{../pictures}}
+
+\begin{document}
+    \section{Demonstration}\label{2}\label{Demonstration}
+    \begin{frame}[<+(1)->]
+        \slidehead{}
+        \boldimpact{Demonstration}
+    \end{frame}
+\end{document}
