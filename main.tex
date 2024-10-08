@@ -1,0 +1,67 @@
+% !TeX root = main.tex
+\documentclass[
+    ngerman,
+    accentcolor=3b,
+    % dark_mode, % uncomment for dark mode
+    fontsize= 12pt,
+    a4paper,
+    aspectratio=169,
+    colorback=true,
+    fancy_row_colors,
+    leqno,
+    fleqn,
+    boxarc=3pt,
+    fleqn,
+    main,
+    design=2008,
+    % shell_escape = false, % Kompatibilität mit sharelatex
+]{algoslides}
+\RequirePackage{import}
+\subimport{common}{preamble}
+
+\graphicspath{{pictures}}
+\title[\shortworkshoptitle{}]{\workshoptitle{}}
+\department{TU Darmstadt | Fachbereich Informatik | \ophase{} | \insertshorttitle{}}
+\date{\today}
+
+%%-------------------------%%
+%%--Beginn des Dokumentes--%%
+%%-------------------------%%
+
+\begin{document}
+
+    %%-----------%%
+    %%--Titelei--%%
+    %%-----------%%
+
+    \maketitle{}
+
+    \begin{frame}[c]
+        % Die Begrüßenden Worte können individuell pro Workshop festgelegt werden. Am Besten nur was kurzes, sowie "Gude", "Hi", "Herzlich Willkommen!", ...
+        \centering\huge\textbf{\gruesswoerte{}}
+    \end{frame}
+
+    %%---------------------------%%
+    %%--Beginn der Präsentation--%%
+    %%---------------------------%%
+
+    \begin{frame}
+        \frametitle{Das steht heute auf dem Plan}
+        \tableofcontents[subsubsectionstyle=hide]
+    \end{frame}
+
+
+    %%-----------%%
+    %%--Kapitel--%%
+    %%-----------%%
+
+    \input{chapters/chapter01}
+
+    \section{Verabschiedung}
+    \begin{frame}[c]
+        \frametitle{Verabschiedung}
+        \centering
+        \huge\textbf{Vielen Dank für Eure Aufmerksamkeit!}
+    \end{frame}
+
+\end{document}
